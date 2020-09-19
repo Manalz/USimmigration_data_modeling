@@ -1,0 +1,21 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "is_it_null",
+  "expectations": [],
+  "meta": {
+    "citations": [
+      {
+        "batch_kwargs": {
+          "data_asset_name": "sas_data",
+          "datasource": "imgr",
+          "path": "/home/workspace/sas_data/part-00008-b9542815-7a8d-45fc-9c67-c9c5007ad0d4-c000.snappy.parquet"
+        },
+        "batch_markers": null,
+        "batch_parameters": null,
+        "citation_date": "20200825T151115.985593Z",
+        "comment": "New suite added via CLI"
+      }
+    ],
+    "great_expectations_version": "0.12.0"
+  }
+}

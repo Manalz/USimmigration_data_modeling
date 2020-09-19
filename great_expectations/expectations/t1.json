@@ -1,0 +1,21 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "t1",
+  "expectations": [],
+  "meta": {
+    "citations": [
+      {
+        "batch_kwargs": {
+          "data_asset_name": "immigration_data_sample",
+          "datasource": "test",
+          "path": "/home/workspace/immigration_data_sample.csv"
+        },
+        "batch_markers": null,
+        "batch_parameters": null,
+        "citation_date": "20200827T112455.815775Z",
+        "comment": "New suite added via CLI"
+      }
+    ],
+    "great_expectations_version": "0.12.0"
+  }
+}

@@ -1,0 +1,113 @@
+
+///////// i94Card Fields (all come from immigration dataset)////////
+
+/* i94card_id - a series of incremental numbers for each new i94 card issued */
+
+/*immigration_id - the unique number of immigration event */
+
+/* i94year - 4 digit year */
+
+/* i94month - Numeric month */ 
+
+/* depature_date is the Departure Date from the USA */
+
+/* I94VISA - Visa codes collapsed into three categories:
+   1 = Business
+   2 = Pleasure
+   3 = Student
+*/
+
+ /* visatype - Class of admission legally admitting the non-immigrant to temporarily stay in U.S. */ 
+
+/* admission_number - Admission Number of allowing accessing into the US */
+
+/* admission_date - Date to which admitted to U.S. (allowed to stay until) */
+
+
+///////// immigrants Fields (all come from immigration dataset)////////
+
+/* immigrant_id- a series of incremental numbers for each immigrant immigrates into US */
+
+/*immigration_id - the unique number of immigration event */
+
+/* birth_year - 4 digit year of birth */
+
+/* gender - Non-immigrant sex */
+ 
+/* occupation - occupation that will be performed in U.S. */
+
+/* I94VISA - Visa codes collapsed into three categories:
+   1 = Business
+   2 = Pleasure
+   3 = Student
+*/
+
+ /* visatype - Class of admission legally admitting the non-immigrant to temporarily stay in U.S. */ 
+
+
+////// cities_demographics Fields (all come from us_cities_demographics  dataset)////////
+
+/* City - US cities name (unique names)*/
+
+/* State_Code - US states codes of two characters  */
+
+/* Median_Age - the city's residents median age*/
+
+/* Male_Population - The number of males*/
+
+/* Female_Population - The number of females*/
+
+/* Total_Population - the total city's population*/
+
+/* Number_of_Veterans - the total of a city's veterans*/
+
+/* Foreign-born - total of foreign born*/
+
+
+////// US_weather Fields (all come from temperature dataset)////////
+
+/* dt - The date */
+
+/* AverageTemperature - The average temperature in a determined date*/
+
+/* City - US city*/
+
+/* Latitude - The city's latitude */
+
+/* Longitude - The city's longitude */
+
+
+////////// immigration_fact Fields ////////////
+
+/*immigration_id - the unique number of immigration event (from immigration dataset) */
+
+/* arrival_date - is the arrival date in the USA. (from immigration dataset) */
+
+/* immigration_model- There are missing values as well as not reported (9) (from immigration dataset) */
+
+value immigration_model
+	1 = 'Air'
+	2 = 'Sea'
+	3 = 'Land'
+	9 = 'Not reported' ; 
+ */
+
+/* port- The port accessed by immigrant into US. This shows all the valid and invalid codes for processing (from immigration dataset)*/ 
+
+/* residancy_state- code of the immigrant's residency state. There is lots of invalid codes in this variable and the list below 
+   shows what we have found to be valid, everything else goes into 'other' (from immigration dataset)*/ 
+
+/* i94card_id- referenced by i94Card*/ 
+
+/* immigrant_id- referenced by immigrants*/
+
+/* City- referenced by cities_demographics*/ 
+
+/* AverageTemperature- referenced by US_weather */
+
+/* Latitude- referenced by US_weather */ 
+
+/* Longitude- referenced by US_weather */
+
+
+
